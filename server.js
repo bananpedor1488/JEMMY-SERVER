@@ -2422,7 +2422,7 @@ app.get('/api/sync/n3k/chk/:id', async (req, res) => {
 // END SYNC SYSTEM ROUTES
 // ============================================
 
-const PORT = process.env.PORT || 25594;
+const PORT = process.env.PORT || 80;
 
 // Global error handler
 app.use((err, req, res, next) => {
@@ -2484,11 +2484,11 @@ if (process.env.VERCEL) {
   module.exports = app;
 } else {
   // For local development
-  server.listen(25594, '0.0.0.0', () => {
+  server.listen(80, '0.0.0.0', () => {
     console.log('\n🚀 Jemmy Server запущен!');
-    console.log(`📡 HTTP: http://0.0.0.0:25594`);
-    console.log(`📡 HTTP: http://178.104.40.37:25594`);
-    console.log(`🔌 WebSocket: ws://178.104.40.37:25594`);
+    console.log(`📡 HTTP: http://0.0.0.0:80`);
+    console.log(`📡 HTTP: http://138.124.18.118`);
+    console.log(`🔌 WebSocket: ws://138.124.18.118`);
     console.log(`⏰ Identity Rotation: автоматическая (24ч жизни)\n`);
   });
 }
