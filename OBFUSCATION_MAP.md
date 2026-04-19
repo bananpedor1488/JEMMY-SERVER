@@ -210,18 +210,18 @@ POST /api/d/m5/x
 
 ```bash
 # Получить баланс
-curl http://178.104.40.37:25594/api/d/r3/g/USER_ID
+curl http://138.124.18.118/api/d/r3/g/USER_ID
 
 # Получить инфо
-curl http://178.104.40.37:25594/api/d/r3/i/USER_ID
+curl http://138.124.18.118/api/d/r3/i/USER_ID
 
 # Сделать перевод
-curl -X POST http://178.104.40.37:25594/api/d/k8/p \
+curl -X POST http://138.124.18.118/api/d/k8/p \
   -H "Content-Type: application/json" \
   -d '{"src":"USER1","dst":"USER2","val":10}'
 
 # История действий
-curl http://178.104.40.37:25594/api/d/k8/h/USER_ID?lim=50
+curl http://138.124.18.118/api/d/k8/h/USER_ID?lim=50
 ```
 
 ---
